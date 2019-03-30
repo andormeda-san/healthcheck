@@ -68,20 +68,6 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// if len(os.Args) > 1 {
-
-	// 	err = service.Control(s, os.Args[1])
-	// 	if err != nil {
-	// 		fmt.Printf("Failed (%s) : %s\n", os.Args[1], err)
-	// 		return
-	// 	}
-	// 	fmt.Printf("Succeeded (%s)\n", os.Args[1])
-	// 	return
-	// }
-
-	// // run in terminal
-	// s.Run()
-
 	if len(os.Args) > 1 {
 		err = service.Control(s, os.Args[1])
 		if err != nil {
